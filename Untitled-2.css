@@ -1,0 +1,129 @@
+body {
+	margin: auto;
+	padding: 50px;
+	color: #000;
+	font-family: 'Slabo 27px', serif;
+    background-image: 
+}
+
+
+/* ---- Set up site grid ---- */
+
+.wrapper {
+	display: grid;
+	grid-template-columns: 200px 2fr 1fr;
+	grid-template-rows: auto;
+	grid-template-areas:
+		"banner banner banner"
+		"nav nav nav"
+		"main main main"
+		"footer footer footer";
+	grid-gap: 4px;
+}
+
+/* ---- End of grid setup ----*/
+
+/* -000- Area styling -000- */
+
+.box {
+	padding: 20px;
+	border-radius: 10px;
+	background-color: #CCCCCC;
+}
+
+/* Area colouring... */
+
+/* logo, banner and footer background are the same */
+.banner {
+	background-color: #000000; /*black*/
+}
+
+.nav, .footer, {
+	background-color: #CCCCCC; /*grey*/
+}
+
+/* Set font on dark areas to white */
+.banner, .main {
+	color: #fff;
+}
+
+
+/* Area specifics */
+
+
+
+
+.banner {
+	grid-area: banner;
+    text-align: center;
+    font-size: 150%;
+    background-color: #000000;
+    padding: 0;
+}
+
+.nav {
+	grid-area: nav;
+	background-color: #CCCCCC; /* grey  */
+	font-size: 150%;
+	text-align: center;
+}
+
+.main {
+	grid-area: main;
+	background-color: #000000; /* black */
+	border: solid 1px #000000;
+}
+
+
+.footer {
+	grid-area: footer;
+	text-align: right;
+}
+
+/* -000- End of area styline -000- */
+
+h2, h3, h4{
+	font-family: 'Lato', sans-serif;
+}
+
+h1 {
+    font-family: 'The Gunslinger Waterdrop', sans-serif;
+    font-size: 70px;
+}
+
+/* Navigation Links */
+.nav a {font-weight: bold;}
+.nav a:link, .nav a:visited {color: #000;} /* black */
+.nav a:hover {color: #fff; text-decoration: none;} /* white */
+
+/* Video centering */
+.center { 
+width:420px; 
+margin-right:auto; 
+margin-left:auto; 
+}
+
+/* image allignment*/
+.left {
+ float: left;
+ padding: 0 20px 10px 0;
+ clear: left;
+}
+
+
+.right {
+ float: right;
+ padding: 0 20px 10px 0;
+ clear: right;
+}
+
+/* contact form styling */
+.contact {
+    width: 640px;
+    height: 677px;
+}
+
+.center_image {
+	text-align: center;
+}
+
